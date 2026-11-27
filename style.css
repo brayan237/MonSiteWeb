@@ -45,3 +45,22 @@ footer {
   text-align: center;
   background: #e1eaf4;
 }
+
+section h2 {
+  margin-top: 0;
+  color: #17365d;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+section li {
+  margin-bottom: 6px;
+}
+
+#temoignages blockquote,
+#temoignages p {
+  font-style: italic;
+  color: #334155;
+}
