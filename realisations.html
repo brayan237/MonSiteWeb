@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réalisations & Études de cas</title>
+  <link rel="stylesheet" href="realisations.css" />
+</head>
+<body>
+  <main class="realisations-page">
+    <!-- En-tête de section -->
+    <header class="page-header">
+      <span class="page-tag">Portfolio & Études de cas</span>
+      <h1 class="page-title">Nos réalisations concrètes</h1>
+      <p class="page-subtitle">
+        Découvrez comment nous transformons des besoins métiers précis en solutions performantes,
+        avec des résultats mesurables.
+      </p>
+
+      <!-- Filtres par catégorie -->
+      <div class="filter-bar" role="group" aria-label="Filtrer les réalisations">
+        <button type="button" class="filter-btn is-active" data-filter="all">Tout voir</button>
+        <button type="button" class="filter-btn" data-filter="web">Sites & Apps Web</button>
+        <button type="button" class="filter-btn" data-filter="mobile">Mobile</button>
+        <button type="button" class="filter-btn" data-filter="ui">UI / UX & Refonte</button>
+      </div>
+    </header>
+
+    <!-- Grille des études de cas -->
+    <section class="cases-grid" aria-label="Liste des études de cas">
+      <!-- Carte 1 -->
+      <article class="case-card" data-category="web">
+        <div class="case-media">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+            alt="Tableau de bord analytique d'une plateforme e-commerce"
+            class="case-image"
+          />
+          <span class="case-badge">Web</span>
+        </div>
+
+        <div class="case-body">
+          <h2 class="case-title">Boutique & Tableau de bord Logistique</h2>
+          <p class="case-summary">
+            Refonte complète du tunnel d'achat et création d'un suivi de commandes en temps réel.
+          </p>
+
+          <div class="case-detail">
+            <h3 class="case-detail-label">Problème résolu</h3>
+            <p class="case-detail-text">
+              Taux d'abandon élevé au paiement (68 %) et suivi manuel des livraisons par téléphone.
+            </p>
+          </div>
+
+          <ul class="tech-list" aria-label="Technologies utilisées">
+            <li class="tech-item">HTML5</li>
+            <li class="tech-item">CSS3</li>
+            <li class="tech-item">JavaScript</li>
+            <li class="tech-item">API REST</li>
+          </ul>
+
+          <div class="case-metrics">
+            <div class="metric">
+              <strong class="metric-value">+42 %</strong>
+              <span class="metric-label">Conversions</span>
+            </div>
+            <div class="metric">
+              <strong class="metric-value">-55 %</strong>
+              <span class="metric-label">Appels support</span>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn-details"
+            data-title="Boutique & Tableau de bord Logistique"
+            data-category="Web"
+            data-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+            data-problem="Taux d'abandon élevé au paiement (68 %) et suivi manuel des livraisons par téléphone, ralentissant le traitement des commandes."
+            data-solution="Mise en place d'un paiement en 2 étapes, d'un calcul clair des frais de livraison et d'un tableau de bord de suivi automatique."
+            data-tech="HTML5, CSS3, JavaScript, API REST"
+            data-result="+42 % de conversions en 3 mois et -55 % d'appels liés au suivi de colis."
+          >
+            Voir l'étude complète
+          </button>
+        </div>
+      </article>
+
+      <!-- Carte 2 -->
+      <article class="case-card" data-category="mobile">
+        <div class="case-media">
+          <img
+            src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80"
+            alt="Interface mobile de réservation de rendez-vous"
+            class="case-image"
+          />
+          <span class="case-badge">Mobile</span>
+        </div>
+
+        <div class="case-body">
+          <h2 class="case-title">Application de Prise de Rendez-vous</h2>
+          <p class="case-summary">
+            Réservation instantanée et rappels automatiques pour un réseau de cliniques et cabinets.
+          </p>
+
+          <div class="case-detail">
+            <h3 class="case-detail-label">Problème résolu</h3>
+            <p class="case-detail-text">
+              Créneaux vacants de dernière minute et oublis fréquents des patients.
+            </p>
+          </div>
+
+          <ul class="tech-list" aria-label="Technologies utilisées">
+            <li class="tech-item">PWA</li>
+            <li class="tech-item">CSS Grid</li>
+            <li class="tech-item">JavaScript</li>
+          </ul>
+
+          <div class="case-metrics">
+            <div class="metric">
+              <strong class="metric-value">-60 %</strong>
+              <span class="metric-label">Absences</span>
+            </div>
+            <div class="metric">
+              <strong class="metric-value">4,8 / 5</strong>
+              <span class="metric-label">Note utilisateurs</span>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn-details"
+            data-title="Application de Prise de Rendez-vous"
+            data-category="Mobile"
+            data-image="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80"
+            data-problem="Créneaux vacants de dernière minute et oublis fréquents des rendez-vous par manque de rappels automatisés."
+            data-solution="Création d'un parcours de réservation rapide sur mobile avec confirmation immédiate et rappels automatiques."
+            data-tech="PWA, CSS Grid, JavaScript"
+            data-result="-60 % de rendez-vous manqués et une note moyenne de 4,8/5 sur les retours clients."
+          >
+            Voir l'étude complète
+          </button>
+        </div>
+      </article>
+
+      <!-- Carte 3 -->
+      <article class="case-card" data-category="ui">
+        <div class="case-media">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+            alt="Maquette et interface claire d'un portail B2B"
+            class="case-image"
+          />
+          <span class="case-badge">UI / UX</span>
+        </div>
+
+        <div class="case-body">
+          <h2 class="case-title">Refonte UX d'un Portail Client B2B</h2>
+          <p class="case-summary">
+            Clarification de l'architecture d'information, accès rapide aux factures et au support.
+          </p>
+
+          <div class="case-detail">
+            <h3 class="case-detail-label">Problème résolu</h3>
+            <p class="case-detail-text">
+              Interface surchargée rendant difficile la recherche de documents et de devis.
+            </p>
+          </div>
+
+          <ul class="tech-list" aria-label="Technologies utilisées">
+            <li class="tech-item">Design System</li>
+            <li class="tech-item">HTML5</li>
+            <li class="tech-item">CSS Variables</li>
+          </ul>
+
+          <div class="case-metrics">
+            <div class="metric">
+              <strong class="metric-value">2x</strong>
+              <span class="metric-label">Plus rapide</span>
+            </div>
+            <div class="metric">
+              <strong class="metric-value">94 %</strong>
+              <span class="metric-label">Satisfaction</span>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn-details"
+            data-title="Refonte UX d'un Portail Client B2B"
+            data-category="UI / UX"
+            data-image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+            data-problem="Interface surchargée et menus complexes ralentissant la consultation des factures et la demande de devis."
+            data-solution="Hiérarchie visuelle simplifiée, recherche directe et composants cohérents sur l'ensemble du portail."
+            data-tech="Design System, HTML5, CSS Variables"
+            data-result="Temps moyen d'action divisé par 2 et 94 % de satisfaction lors des tests utilisateurs."
+          >
+            Voir l'étude complète
+          </button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Modale détaillée d'étude de cas -->
+  <div class="modal" id="caseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Fermer la fenêtre">&times;</button>
+      <img src="" alt="" class="modal-image" id="modalImage" />
+      <div class="modal-content">
+        <span class="case-badge" id="modalCategory"></span>
+        <h2 class="modal-title" id="modalTitle"></h2>
+
+        <div class="modal-block">
+          <h3>Problème résolu</h3>
+          <p id="modalProblem"></p>
+        </div>
+
+        <div class="modal-block">
+          <h3>Solution mise en place</h3>
+          <p id="modalSolution"></p>
+        </div>
+
+        <div class="modal-block">
+          <h3>Technologies utilisées</h3>
+          <p id="modalTech"></p>
+        </div>
+
+        <div class="modal-block modal-result">
+          <h3>Résultats obtenus</h3>
+          <p id="modalResult"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const cards = document.querySelectorAll(".case-card");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter;
+
+          filterButtons.forEach((btn) => btn.classList.remove("is-active"));
+          button.classList.add("is-active");
+
+          cards.forEach((card) => {
+            const match = filter === "all" || card.dataset.category === filter;
+            card.classList.toggle("is-hidden", !match);
+          });
+        });
+      });
+
+      const modal = document.getElementById("caseModal");
+      const backdrop = document.getElementById("modalBackdrop");
+      const closeBtn = document.getElementById("modalClose");
+      const detailButtons = document.querySelectorAll(".btn-details");
+
+      const modalImage = document.getElementById("modalImage");
+      const modalCategory = document.getElementById("modalCategory");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalProblem = document.getElementById("modalProblem");
+      const modalSolution = document.getElementById("modalSolution");
+      const modalTech = document.getElementById("modalTech");
+      const modalResult = document.getElementById("modalResult");
+
+      function openModal(btn) {
+        modalImage.src = btn.dataset.image;
+        modalImage.alt = btn.dataset.title;
+        modalCategory.textContent = btn.dataset.category;
+        modalTitle.textContent = btn.dataset.title;
+        modalProblem.textContent = btn.dataset.problem;
+        modalSolution.textContent = btn.dataset.solution;
+        modalTech.textContent = btn.dataset.tech;
+        modalResult.textContent = btn.dataset.result;
+
+        modal.hidden = false;
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        modal.hidden = true;
+        document.body.style.overflow = "";
+      }
+
+      detailButtons.forEach((btn) => {
+        btn.addEventListener("click", () => openModal(btn));
+      });
+
+      closeBtn.addEventListener("click", closeModal);
+      backdrop.addEventListener("click", closeModal);
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !modal.hidden) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
